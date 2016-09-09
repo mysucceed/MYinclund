@@ -1,0 +1,105 @@
+*{
+  padding:0;margin:0;list-style:none;
+  position: relative;
+  }
+a{
+  text-decoration:none;
+}
+body{
+  color:#FFFFFF;font-family:"Helvetica Nueue",微软雅黑;
+  font-size: 12px;
+}
+img{
+  border:0;
+}
+//栅格系统
+$large-size :1441px;
+$mendiu-size :1068px;
+$small-size :768px;
+//大屏
+@mixin onl {
+  @media screen and (max-width: $large-size) {
+    //@media screen and (min-width: $mendiu-size) {
+    @content
+  }
+}
+//中屏
+@mixin onm {
+  @media  screen and (max-width: $mendiu-size) {
+    @content
+  }
+}
+
+//小屏
+@mixin ons {
+  @media  screen and (max-width: $small-size) {
+    @media screen and (min-width: 250px){
+      @content
+    }
+
+}
+
+}
+
+
+//水平居中
+@mixin level{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+//垂直居中
+@mixin vertical {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+//栅格系统
+$list:(
+        'l':$large-size,
+        'm':$mendiu-size,
+        's':$small-size
+);
+$num:12;
+@each $k in map-keys($list) {
+  @media screen and ( max-width: map-get($list,$k)){
+
+    @for $i from 1 through $num {
+      .col.#{$k}#{$i}{
+        width: percentage($i/$num);
+        float: left;
+      }
+    }
+
+
+  }
+}
+//正方形
+@mixin cube ($size){
+  width: $size;
+  height: $size;
+}
+//矩形
+@mixin juxin($width,$height){
+  width: $width;
+  height: $height;
+}
+@mixin cricle($size){
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+
+@mixin userem ($size){
+  $list:414px,412px,384px,375px,360px,320px;
+  @each $i in $list{
+    @media screen and(max-width:#{$i}){
+      html{
+        font-size:100px*($i/$size);
+      }
+    }
+  }
+}
+

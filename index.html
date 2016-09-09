@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" ng-app="reminder">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>INCLUND</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-animate.js"></script>
+    <script src="js/ng-js.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+
+     <div class="remoder">
+         <div class="lists">
+
+             <div class="header">
+                 <div class="log"></div>
+                 <span>提醒事项</span>
+                 <i ng-click="addlist()"></i>
+             </div>
+
+             <ul class="list-warp">
+                 <li>
+                   <span></span>
+                     <h4>已计划</h4>
+                 </li>
+
+                 <li class="plan"
+                 	 ng-click="setcurrent($index)"
+                     ng-repeat="v in database" 
+                     ng-class="{active: v===currentlist}"
+                     >
+                     <span ng-class="v.threm"></span>
+                     <input type="text" ng-model="v.listname">
+                 </li>
+             </ul>
+         </div>
+         <!--右侧的内容-->
+         <div class="content">
+             <div class="seach">
+                 <span></span>
+                 <input type="text" placeholder="搜索所有提醒">
+             </div>
+             <div class="color-box"
+             	  ng-class="currentlist.threm">
+                <div class="content-title">
+                   <div class="title-inner">
+                       <span ng-bind="currentlist.listname"></span>
+                       <i ng-click="showcard=!showcard">选项</i>
+                   </div>
+                   <div class="potions-card"
+                   	    ng-show="showcard">
+                       <div class="card-inner">
+                       <input type="text" ng-model="currentlist.listname">
+                       <p>列表颜色</p>
+                       <ul class="color">
+                       	 <li 
+                       	 	ng-repeat="co in cricle"
+                       	 	ng-click="currentlist.threm=co"
+                       	 	ng-class="[co,{'active': (co===currentlist.threm)}]"
+                       	 	
+                       	 	>
+                       		<span></span>
+                         </li>
+                       </ul>
+                       <div class="btn">
+                       	  <div class="del"
+                       	  	ng-click="removelist(currentlist.id)"
+                       	  	>删除</div>
+                       	  <div class="wan">完成</div>
+                       	  <div class="quxiao"
+                       	  	ng-click="showcard=false">取消</div>
+                       	  
+                       </div>             
+                       </div>
+                   </div>
+               </div>
+                 <div class="wancheng">
+                     <span></span>
+                     <p>已完成0项</p>
+                     <div class="line"></div>
+                 </div>
+               <ul class="content-list">
+                   <li class="li"
+                   	   ng-repeat="cri in currentlist.todos">
+                       <span></span>
+                       <input type="text" ng-model="cri.name">
+                       <p>详情信息</p>
+                       <div class="line"></div>
+                   </li>
+                   <li class="add"
+                   	   ng-click="addli()">
+                   	   <h3>新条目</h3>
+                   	   <div class="line"></div>
+                   </li>
+               </ul>
+             </div>
+
+         </div>
+     </div>
+
+</body>
+</html>

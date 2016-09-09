@@ -1,0 +1,417 @@
+@import "base";
+  .remoder {
+    position: fixed;
+    left: 0;right: 0;
+    top: 0;bottom: 0;
+    margin: auto;
+    .lists{            
+      width: 390px;
+      @include vertical;
+      background-color: #383836;
+      .header {
+        height: 45px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 12px;           
+        border-bottom: 1px solid #1A1A1A;
+        .log {
+          width: 56px;height: 16px;
+          @include vertical;
+          background: url("../img/packed-5.png") 0 -588px no-repeat;
+        }
+        span {
+          display: block;
+          height: 100%;
+          position: absolute;
+          top: 0;left: 75px;
+          line-height: 44px;
+          text-align: center;
+          color: #999;
+          font-size: 19px;
+          &:hover{
+            color: #B0B0AF;
+          }
+        }
+        i {
+          display: block;
+          cursor: pointer;
+          @include vertical;
+          right: 12px;
+          @include cube(23px);
+          background: url("../img/packed-5.png") -23px -526px no-repeat;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+      .list-warp{
+        width: 100%;
+        li {
+          box-sizing: border-box;
+          padding: 0 10px;
+          height: 44px;
+        }
+        li:nth-child(1){
+          line-height: 44px;
+          border-bottom: 1px solid #2A2A28;
+          box-shadow: 0px 1px 0 0px #3E3E3C;
+          h4{
+            @include vertical;
+            display: inline-block;
+            left: 54px;
+            line-height: 44px;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 200;
+          }
+          span {
+            @include cube(40px);
+            margin-top: 2px;
+            display: inline-block;
+            background: url("../img/packed-5.png") 0 -359px no-repeat;
+          }
+        }
+        .plan {
+          padding: 0 0 0 54px;
+          span {
+            @include cube(17px);
+            display: block;
+            @include vertical;
+            left: 21px;
+            background: url("../img/packed-5.png") -133px -549px no-repeat;
+          }
+          span.green{
+            background: url("../img/packed-5.png") -85px -571px no-repeat;
+          }
+          span.yellow{
+            background: url("../img/packed-5.png") -34px -571px no-repeat;
+          }
+          span.blue {
+            background: url("../img/packed-5.png") -68px -571px no-repeat;
+          }
+          span.orange{
+            background: url("../img/packed-5.png") -51px -571px no-repeat;
+          }
+          span.purple{
+            background: url("../img/packed-5.png") -17px -571px no-repeat;
+          }
+          span.brow{
+            background: url("../img/packed-5.png") -133px -549px no-repeat;
+          }
+          span.pink{
+            background: url("../img/packed-5.png") -102px -571px no-repeat;
+          }
+          input {
+            display: block;
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid #2A2A28;
+            box-shadow: 0px 1px 0 0px #3E3E3C;
+            font-size: 20px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .lists .list-warp .plan.active{
+        background: #2D2D2B;
+    }
+    
+//  右边的内容
+    .content {
+      position: absolute;
+      top: 0;bottom: 0;
+      left: 390px;right: 0;
+      margin: auto;
+      background: url("../img/packed-4.png");
+      .seach {
+        box-sizing: border-box;
+        padding-left: 45px;
+        height: 45px;
+        border-bottom: 1px solid rgba(128,128,128,0.35);
+        span{
+          @include vertical;
+          left: 15px;
+          @include cube(24px);
+          background: url("../img/packed-5.png") -138px -359px;
+        }
+        input {
+          height: 100%;
+          width: 430px;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          font-size: 20px;
+        }
+        //83 19
+      }
+      .content-title{
+        box-sizing: border-box;
+        height: 83px;
+        padding-top: 24px;
+        padding-left: 9px;
+        margin-left: 19px;
+        border-bottom: 1px solid #E0E0E0;
+        box-shadow: 0 1px 0 0 #ffffff;
+        
+        .potions-card{
+            box-sizing: border-box;
+            width: 363px;
+            height: 234px;
+            position: absolute;
+            top: -20px;right: 70px;
+            background: #FFFFFF;
+            z-index: 10;
+            border: 1px solid #CCCCCC;
+            border-radius: 8px;
+            padding: 4px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15), 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+            .card-inner{
+                box-sizing: border-box;
+                width: 100%;
+                padding: 20px 0 0 20px;
+                height: 100%;
+                border: 1px solid #CCCCCC;
+                border-radius: 8px;
+                input {
+                    box-sizing: border-box;
+                    width: 314px;
+                    height: 42px;
+                    padding-left: 14px;
+                    border: none;
+                    font-size: 25px;
+                    border: 1px solid #CCCCCC;
+                    outline: none;
+                }
+                p {
+                    width: 100%;
+                    height: 55px;
+                    color: #000000;
+                    font-size: 15px;
+                    line-height: 55px;
+                }
+                .color{
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 50px;
+                    padding-bottom: 14px;
+                    border-bottom: 1px solid #CCCCCC;
+                    
+                    li {
+                        width: 33px;
+                        height: 33px;
+                        float: left;
+                        margin-left: 10px;
+                        span {
+                                display: block;
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 50%;
+                                margin: 4px 0px 0 4px;
+                                cursor: pointer;
+                                }
+                        }
+//                  实心圆
+                    $colors:(
+                      url('../img/stylesheet-1.png') 0 -256px,url('../img/stylesheet-1.png') 0 -306px,
+                      url('../img/stylesheet-1.png') 0 -281px,url('../img/stylesheet-1.png') 0 -381px,
+                      url('../img/stylesheet-1.png') 0 -231px,url('../img/stylesheet-1.png') 0 -331px,
+                      url('../img/stylesheet-1.png') 0 -356px
+                    );
+                    @for $i from 1 through 7{
+                        li:nth-child(#{$i}) span{
+                            background: nth($colors,$i);
+                        }
+                    };
+//                  空心圆
+                    $circle:(
+                       'green':url("../img/stylesheet-1.png") 0px -33px,
+                       'yellow':url("../img/stylesheet-1.png") 0px -99px,
+                       'blue':url("../img/stylesheet-1.png") 0px -66px,
+                       'orange':url("../img/stylesheet-1.png") 0px -198px,
+                       'purple':url("../img/stylesheet-1.png") 0px 0px,
+                       'brow':url("../img/stylesheet-1.png") 0px -132px,
+                       'pink':url("../img/stylesheet-1.png") 0px -165px
+                    );
+                  
+                    @each $j in map-keys($circle) {
+                         
+                        li.active.#{$j}{
+                            background: map-get($circle,$j)
+                        }
+                      
+                    }
+                }
+                .btn {
+                    width: 100%;
+                    height: 20px;
+                    margin-top: 20px;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #2A2A28;
+                    .del {
+                        cursor: pointer;
+                        float: left;
+                        color: #F62368;
+                    }
+                    .quxiao{
+                        cursor: pointer;
+                        float: right;
+                        margin-right: 20px;
+                    }
+                    .wan {
+                        cursor: pointer;
+                        float: right;
+                        padding-left: 20px;
+                        border-left: 1px solid #CCCCCC;
+                        margin-right: 30px;
+                    }
+                }
+            }
+             
+        }
+        .title-inner{
+          height: 48px;
+          width: 100%;
+          color: #000000;
+          span {
+            display: inline-block;
+            line-height: 40px;
+            height: 40px;
+            font-size: 35px;
+            margin-top: 4px;
+          }
+          i {
+            cursor: pointer;
+            font-style: normal;
+            display: inline-block;
+            width:38px;height: 22px;
+            text-align: center;
+            line-height: 22px;
+            font-size: 19px;
+            position: absolute;
+            top: 43-24px;right: 20px;
+          }
+        }
+      }
+      //58 5
+      .wancheng{
+        width: 100%;
+        height: 58px;
+        padding-top: 5px;
+        padding-left: 28px;
+        color: #ccc;
+        .line{
+          box-sizing: border-box;
+          width: 100%;
+          position: absolute;
+          bottom: 0;left: 19px;
+          border-bottom: 1px solid #E0E0E0;
+          box-shadow: 0 1px 0 0 #ffffff;
+        }
+        span {
+          cursor: pointer;
+          @include cube(19px);
+          @include vertical;
+          background: url("../img/packed-5.png") -95px -528px;
+        }
+        p {
+          margin-left: 35px;
+          display: inline-block;
+          font-size: 20px;
+          line-height: 50px;
+        }
+      }
+      .content-list {
+          .add{
+           box-sizing: border-box;   
+           padding-left: 51px;
+           height: 52px;
+           h3{ cursor: pointer;
+               height: 52px;
+               line-height: 52px;
+               color: #CCCCCC;
+               font-size: 20px;
+               font-style: normal;
+               font-weight: 400;
+            }
+            .line{
+            box-sizing: border-box;
+            width: 100%;
+            position: absolute;
+            bottom: 0;left: 19px;
+            //margin-left: 19px;
+            border-bottom: 1px solid #E0E0E0;
+            box-shadow: 0 1px 0 0 #ffffff;
+          }
+         } 
+        .li{
+          box-sizing: border-box;
+          width: 100%;
+          height: 52px;
+          padding-left: 58px;
+          span {
+            @include cube(32px);
+            @include vertical;
+            left: 21px;
+            background: url("../img/packed-5.png") -42px -359px;
+          }
+          input {
+            height: 100%;
+            display: block;
+            margin-left: 23px;
+            outline: none;
+            border: none;
+            font-size: 20px;
+            background: transparent;
+          }
+          p{
+            cursor: pointer;
+            position: absolute;
+            right: 40px;top: 0;
+            display: inline-block;
+            height: 100%;
+            line-height: 52px;
+            font-size: 20px;
+            color: #000000;
+            //color:transparent;
+          }
+          .line{
+            box-sizing: border-box;
+            width: 100%;
+            position: absolute;
+            bottom: 0;left: 19px;
+            //margin-left: 19px;
+            border-bottom: 1px solid #E0E0E0;
+            box-shadow: 0 1px 0 0 #ffffff;
+          }
+        }         
+       }
+       
+      }
+    }
+
+      //右侧的字体变颜色
+      $fontcolor:('green':#49BF1F,'yellow':#E0AC00,'blue':#1BADF8,'orange':#FF7F00,'purple':#B14BC9,'brow':#A28467,'pink':#FF2968);
+      @each $k in map-keys($fontcolor){
+          .content .color-box.#{$k} { 
+        .content-title .title-inner {
+            span,i{
+            color:map-get($fontcolor,$k);
+          } 
+        }
+        .content-title .potions-card .card-inner input{
+            color:map-get($fontcolor,$k);
+        }
+        .content-list p {
+            color:map-get($fontcolor,$k);
+        }
+      } 
+    }
+        
+
+
+

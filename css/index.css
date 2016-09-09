@@ -1,0 +1,764 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #FFFFFF;
+  font-family: "Helvetica Nueue",微软雅黑;
+  font-size: 12px;
+}
+
+img {
+  border: 0;
+}
+
+@media screen and (max-width: 1441px) {
+  .col.l1 {
+    width: 8.33333%;
+    float: left;
+  }
+  .col.l2 {
+    width: 16.66667%;
+    float: left;
+  }
+  .col.l3 {
+    width: 25%;
+    float: left;
+  }
+  .col.l4 {
+    width: 33.33333%;
+    float: left;
+  }
+  .col.l5 {
+    width: 41.66667%;
+    float: left;
+  }
+  .col.l6 {
+    width: 50%;
+    float: left;
+  }
+  .col.l7 {
+    width: 58.33333%;
+    float: left;
+  }
+  .col.l8 {
+    width: 66.66667%;
+    float: left;
+  }
+  .col.l9 {
+    width: 75%;
+    float: left;
+  }
+  .col.l10 {
+    width: 83.33333%;
+    float: left;
+  }
+  .col.l11 {
+    width: 91.66667%;
+    float: left;
+  }
+  .col.l12 {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .col.m1 {
+    width: 8.33333%;
+    float: left;
+  }
+  .col.m2 {
+    width: 16.66667%;
+    float: left;
+  }
+  .col.m3 {
+    width: 25%;
+    float: left;
+  }
+  .col.m4 {
+    width: 33.33333%;
+    float: left;
+  }
+  .col.m5 {
+    width: 41.66667%;
+    float: left;
+  }
+  .col.m6 {
+    width: 50%;
+    float: left;
+  }
+  .col.m7 {
+    width: 58.33333%;
+    float: left;
+  }
+  .col.m8 {
+    width: 66.66667%;
+    float: left;
+  }
+  .col.m9 {
+    width: 75%;
+    float: left;
+  }
+  .col.m10 {
+    width: 83.33333%;
+    float: left;
+  }
+  .col.m11 {
+    width: 91.66667%;
+    float: left;
+  }
+  .col.m12 {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col.s1 {
+    width: 8.33333%;
+    float: left;
+  }
+  .col.s2 {
+    width: 16.66667%;
+    float: left;
+  }
+  .col.s3 {
+    width: 25%;
+    float: left;
+  }
+  .col.s4 {
+    width: 33.33333%;
+    float: left;
+  }
+  .col.s5 {
+    width: 41.66667%;
+    float: left;
+  }
+  .col.s6 {
+    width: 50%;
+    float: left;
+  }
+  .col.s7 {
+    width: 58.33333%;
+    float: left;
+  }
+  .col.s8 {
+    width: 66.66667%;
+    float: left;
+  }
+  .col.s9 {
+    width: 75%;
+    float: left;
+  }
+  .col.s10 {
+    width: 83.33333%;
+    float: left;
+  }
+  .col.s11 {
+    width: 91.66667%;
+    float: left;
+  }
+  .col.s12 {
+    width: 100%;
+    float: left;
+  }
+}
+
+.remoder {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.remoder .lists {
+  width: 390px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background-color: #383836;
+}
+
+.remoder .lists .header {
+  height: 45px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 12px;
+  border-bottom: 1px solid #1A1A1A;
+}
+
+.remoder .lists .header .log {
+  width: 56px;
+  height: 16px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background: url("../img/packed-5.png") 0 -588px no-repeat;
+}
+
+.remoder .lists .header span {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 75px;
+  line-height: 44px;
+  text-align: center;
+  color: #999;
+  font-size: 19px;
+}
+
+.remoder .lists .header span:hover {
+  color: #B0B0AF;
+}
+
+.remoder .lists .header i {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  right: 12px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/packed-5.png") -23px -526px no-repeat;
+}
+
+.remoder .lists .header i:hover {
+  opacity: 0.7;
+}
+
+.remoder .lists .list-warp {
+  width: 100%;
+}
+
+.remoder .lists .list-warp li {
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 44px;
+}
+
+.remoder .lists .list-warp li:nth-child(1) {
+  line-height: 44px;
+  border-bottom: 1px solid #2A2A28;
+  box-shadow: 0px 1px 0 0px #3E3E3C;
+}
+
+.remoder .lists .list-warp li:nth-child(1) h4 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  display: inline-block;
+  left: 54px;
+  line-height: 44px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 200;
+}
+
+.remoder .lists .list-warp li:nth-child(1) span {
+  width: 40px;
+  height: 40px;
+  margin-top: 2px;
+  display: inline-block;
+  background: url("../img/packed-5.png") 0 -359px no-repeat;
+}
+
+.remoder .lists .list-warp .plan {
+  padding: 0 0 0 54px;
+}
+
+.remoder .lists .list-warp .plan span {
+  width: 17px;
+  height: 17px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  left: 21px;
+  background: url("../img/packed-5.png") -133px -549px no-repeat;
+}
+
+.remoder .lists .list-warp .plan span.green {
+  background: url("../img/packed-5.png") -85px -571px no-repeat;
+}
+
+.remoder .lists .list-warp .plan span.yellow {
+  background: url("../img/packed-5.png") -34px -571px no-repeat;
+}
+
+.remoder .lists .list-warp .plan span.blue {
+  background: url("../img/packed-5.png") -68px -571px no-repeat;
+}
+
+.remoder .lists .list-warp .plan span.orange {
+  background: url("../img/packed-5.png") -51px -571px no-repeat;
+}
+
+.remoder .lists .list-warp .plan span.purple {
+  background: url("../img/packed-5.png") -17px -571px no-repeat;
+}
+
+.remoder .lists .list-warp .plan span.brow {
+  background: url("../img/packed-5.png") -133px -549px no-repeat;
+}
+
+.remoder .lists .list-warp .plan span.pink {
+  background: url("../img/packed-5.png") -102px -571px no-repeat;
+}
+
+.remoder .lists .list-warp .plan input {
+  display: block;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #2A2A28;
+  box-shadow: 0px 1px 0 0px #3E3E3C;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.remoder .lists .list-warp .plan.active {
+  background: #2D2D2B;
+}
+
+.remoder .content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 390px;
+  right: 0;
+  margin: auto;
+  background: url("../img/packed-4.png");
+}
+
+.remoder .content .seach {
+  box-sizing: border-box;
+  padding-left: 45px;
+  height: 45px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+}
+
+.remoder .content .seach span {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  left: 15px;
+  width: 24px;
+  height: 24px;
+  background: url("../img/packed-5.png") -138px -359px;
+}
+
+.remoder .content .seach input {
+  height: 100%;
+  width: 430px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.remoder .content .content-title {
+  box-sizing: border-box;
+  height: 83px;
+  padding-top: 24px;
+  padding-left: 9px;
+  margin-left: 19px;
+  border-bottom: 1px solid #E0E0E0;
+  box-shadow: 0 1px 0 0 #ffffff;
+}
+
+.remoder .content .content-title .potions-card {
+  box-sizing: border-box;
+  width: 363px;
+  height: 234px;
+  position: absolute;
+  top: -20px;
+  right: 70px;
+  background: #FFFFFF;
+  z-index: 10;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15), 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.remoder .content .content-title .potions-card .card-inner {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 0 0 20px;
+  height: 100%;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+}
+
+.remoder .content .content-title .potions-card .card-inner input {
+  box-sizing: border-box;
+  width: 314px;
+  height: 42px;
+  padding-left: 14px;
+  border: none;
+  font-size: 25px;
+  border: 1px solid #CCCCCC;
+  outline: none;
+}
+
+.remoder .content .content-title .potions-card .card-inner p {
+  width: 100%;
+  height: 55px;
+  color: #000000;
+  font-size: 15px;
+  line-height: 55px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li {
+  width: 33px;
+  height: 33px;
+  float: left;
+  margin-left: 10px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 4px 0px 0 4px;
+  cursor: pointer;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li:nth-child(1) span {
+  background: url("../img/stylesheet-1.png") 0 -256px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li:nth-child(2) span {
+  background: url("../img/stylesheet-1.png") 0 -306px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li:nth-child(3) span {
+  background: url("../img/stylesheet-1.png") 0 -281px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li:nth-child(4) span {
+  background: url("../img/stylesheet-1.png") 0 -381px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li:nth-child(5) span {
+  background: url("../img/stylesheet-1.png") 0 -231px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li:nth-child(6) span {
+  background: url("../img/stylesheet-1.png") 0 -331px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li:nth-child(7) span {
+  background: url("../img/stylesheet-1.png") 0 -356px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li.active.green {
+  background: url("../img/stylesheet-1.png") 0px -33px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li.active.yellow {
+  background: url("../img/stylesheet-1.png") 0px -99px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li.active.blue {
+  background: url("../img/stylesheet-1.png") 0px -66px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li.active.orange {
+  background: url("../img/stylesheet-1.png") 0px -198px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li.active.purple {
+  background: url("../img/stylesheet-1.png") 0px 0px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li.active.brow {
+  background: url("../img/stylesheet-1.png") 0px -132px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .color li.active.pink {
+  background: url("../img/stylesheet-1.png") 0px -165px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .btn {
+  width: 100%;
+  height: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #2A2A28;
+}
+
+.remoder .content .content-title .potions-card .card-inner .btn .del {
+  cursor: pointer;
+  float: left;
+  color: #F62368;
+}
+
+.remoder .content .content-title .potions-card .card-inner .btn .quxiao {
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
+}
+
+.remoder .content .content-title .potions-card .card-inner .btn .wan {
+  cursor: pointer;
+  float: right;
+  padding-left: 20px;
+  border-left: 1px solid #CCCCCC;
+  margin-right: 30px;
+}
+
+.remoder .content .content-title .title-inner {
+  height: 48px;
+  width: 100%;
+  color: #000000;
+}
+
+.remoder .content .content-title .title-inner span {
+  display: inline-block;
+  line-height: 40px;
+  height: 40px;
+  font-size: 35px;
+  margin-top: 4px;
+}
+
+.remoder .content .content-title .title-inner i {
+  cursor: pointer;
+  font-style: normal;
+  display: inline-block;
+  width: 38px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 19px;
+  position: absolute;
+  top: 19px;
+  right: 20px;
+}
+
+.remoder .content .wancheng {
+  width: 100%;
+  height: 58px;
+  padding-top: 5px;
+  padding-left: 28px;
+  color: #ccc;
+}
+
+.remoder .content .wancheng .line {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 19px;
+  border-bottom: 1px solid #E0E0E0;
+  box-shadow: 0 1px 0 0 #ffffff;
+}
+
+.remoder .content .wancheng span {
+  cursor: pointer;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background: url("../img/packed-5.png") -95px -528px;
+}
+
+.remoder .content .wancheng p {
+  margin-left: 35px;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.remoder .content .content-list .add {
+  box-sizing: border-box;
+  padding-left: 51px;
+  height: 52px;
+}
+
+.remoder .content .content-list .add h3 {
+  cursor: pointer;
+  height: 52px;
+  line-height: 52px;
+  color: #CCCCCC;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.remoder .content .content-list .add .line {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 19px;
+  border-bottom: 1px solid #E0E0E0;
+  box-shadow: 0 1px 0 0 #ffffff;
+}
+
+.remoder .content .content-list .li {
+  box-sizing: border-box;
+  width: 100%;
+  height: 52px;
+  padding-left: 58px;
+}
+
+.remoder .content .content-list .li span {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  left: 21px;
+  background: url("../img/packed-5.png") -42px -359px;
+}
+
+.remoder .content .content-list .li input {
+  height: 100%;
+  display: block;
+  margin-left: 23px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  background: transparent;
+}
+
+.remoder .content .content-list .li p {
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  line-height: 52px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.remoder .content .content-list .li .line {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 19px;
+  border-bottom: 1px solid #E0E0E0;
+  box-shadow: 0 1px 0 0 #ffffff;
+}
+
+.content .color-box.green .content-title .title-inner span, .content .color-box.green .content-title .title-inner i {
+  color: #49BF1F;
+}
+
+.content .color-box.green .content-title .potions-card .card-inner input {
+  color: #49BF1F;
+}
+
+.content .color-box.green .content-list p {
+  color: #49BF1F;
+}
+
+.content .color-box.yellow .content-title .title-inner span, .content .color-box.yellow .content-title .title-inner i {
+  color: #E0AC00;
+}
+
+.content .color-box.yellow .content-title .potions-card .card-inner input {
+  color: #E0AC00;
+}
+
+.content .color-box.yellow .content-list p {
+  color: #E0AC00;
+}
+
+.content .color-box.blue .content-title .title-inner span, .content .color-box.blue .content-title .title-inner i {
+  color: #1BADF8;
+}
+
+.content .color-box.blue .content-title .potions-card .card-inner input {
+  color: #1BADF8;
+}
+
+.content .color-box.blue .content-list p {
+  color: #1BADF8;
+}
+
+.content .color-box.orange .content-title .title-inner span, .content .color-box.orange .content-title .title-inner i {
+  color: #FF7F00;
+}
+
+.content .color-box.orange .content-title .potions-card .card-inner input {
+  color: #FF7F00;
+}
+
+.content .color-box.orange .content-list p {
+  color: #FF7F00;
+}
+
+.content .color-box.purple .content-title .title-inner span, .content .color-box.purple .content-title .title-inner i {
+  color: #B14BC9;
+}
+
+.content .color-box.purple .content-title .potions-card .card-inner input {
+  color: #B14BC9;
+}
+
+.content .color-box.purple .content-list p {
+  color: #B14BC9;
+}
+
+.content .color-box.brow .content-title .title-inner span, .content .color-box.brow .content-title .title-inner i {
+  color: #A28467;
+}
+
+.content .color-box.brow .content-title .potions-card .card-inner input {
+  color: #A28467;
+}
+
+.content .color-box.brow .content-list p {
+  color: #A28467;
+}
+
+.content .color-box.pink .content-title .title-inner span, .content .color-box.pink .content-title .title-inner i {
+  color: #FF2968;
+}
+
+.content .color-box.pink .content-title .potions-card .card-inner input {
+  color: #FF2968;
+}
+
+.content .color-box.pink .content-list p {
+  color: #FF2968;
+}
